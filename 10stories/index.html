@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ten Stories</title>
+        <!-- Icon -->
+        <link rel=icon href="./content/favicon.ico">
+        <!-- External Styles -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <!-- Internal Styles -->
+        <link rel="stylesheet" type="text/css" href="./styles/prompt_style.css">
+        <link rel="stylesheet" type="text/css" href="./styles/animations.css">
+        <link rel="stylesheet" type="text/css" href="./styles/transitions.css">
+
+        <!-- External Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- Internal Scripts -->
+        <script type="text/javascript" src="./scripts/quizHandler.js" ></script>
+        <script type="text/javascript" src="./scripts/animationHandler.js" ></script>
+        <script type="text/javascript" src="./scripts/timeHandler.js" ></script>
+        <script type="text/javascript" src="./scripts/quizLoaded.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="prompt_container">
+                <div id="film">
+                    <div id="film_bg"></div>
+                </div>
+                <div id="quiz_container">
+                    <div id="icons" class="d-inline-flex p-2">
+                        <div id="timer">
+                                <div id="time_input">10:10</div>
+                                <div id="timer_outer">
+                                    <div id="timer_inner"> 
+                                        <p id="timer_text"></p>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div id="action">
+                            <div class="playpause">
+                                    <input type="checkbox" value="None" id="playpause" name="check" onclick="togglePause()" />
+                                    <label for="playpause" tabindex=1 ></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id = "quiz_content" class="d-inline-flex p-2">
+                        <div id ="question">Is This a Question?</div>
+
+                        <div id ="answers" class="d-flex flex-nowrap">
+                            <div>
+                                <div id="first" onclick="animateCAE(this)"  class = "rounded red option d-inline-flex p-2">
+                                    <span>First Option</span>
+                                </div>
+                                
+                                <div id="second" onclick="animateCAE(this)" class = "rounded blue option d-inline-flex p-2">
+                                    <span>Second Option</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div id="third"  onclick="animateCAE(this)" class = "rounded green option d-inline-flex p-2">
+                                    <span>Third Option</span>
+                                </div>
+                                <div id="fourth" onclick="animateCAE(this)" class = "rounded yellow option d-inline-flex p-2">
+                                    <span>Fourth Option</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+        
+
+</html>
