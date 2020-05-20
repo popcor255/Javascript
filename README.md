@@ -1,2 +1,1 @@
 # Javascript
-My javascript projects
